@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:background="@mipmap/guide_3"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/loginBtn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@drawable/btn_text_color_ffffff"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="resolve"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/login_btn"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

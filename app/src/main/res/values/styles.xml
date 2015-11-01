@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="ActivityRightToLeftAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_right_left_enter_anim_translate</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_alpha_fixed</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_alpha_fixed</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_left_right_exit_anim_translate</item>
+    </style>
+    <style name="ActivityBottomToTopAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_bottom_top_enter_anim_translate</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_alpha_fixed</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_alpha_fixed</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_top_bottom_exit_anim_translate</item>
+    </style>
+
+    <style name="UpEnterDownExitDialog" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/up_enter_anim_translate</item>
+        <item name="android:windowExitAnimation">@anim/down_exit_anim_translate</item>
+    </style>
+
+</resources>

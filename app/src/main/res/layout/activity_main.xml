@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pi.cn.com.fqzdj.camera.CameraSurfaceView
+            android:id="@+id/camera_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg2"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/centerView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/scissorsIv"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_above="@+id/centerView"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@mipmap/scissors"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/stoneIv"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/centerView"
+            android:layout_toLeftOf="@+id/centerView"
+            android:layout_toStartOf="@+id/centerView"
+            android:scaleType="center"
+            android:src="@mipmap/stone"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/clothIv"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/centerView"
+            android:layout_toEndOf="@+id/centerView"
+            android:layout_toRightOf="@+id/centerView"
+            android:scaleType="center"
+            android:src="@mipmap/cloth"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/resultIv"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@mipmap/cloth"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/randomIv"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/random"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/aboutEnterTV"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="于"
+            android:textColor="@color/c_ffffff"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/about"/>
+
+        <TextView
+            android:id="@+id/coinTV"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="币"
+            android:textColor="@color/c_ffffff"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/about"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/aboutRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/about">
+        <TextView
+            android:id="@+id/backTV"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="反"
+            android:textColor="@color/c_ffffff"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/about"/>
+    </RelativeLayout>
+</RelativeLayout>
